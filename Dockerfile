@@ -4,4 +4,4 @@ RUN locale-gen ${OS_LOCALE}
 ENV LANG=${OS_LOCALE} \
     LANGUAGE=en_US:en \
     LC_ALL=${OS_LOCALE}
-RUN mkdir /root/db && apt-get update && apt-get -y install curl locales && curl https://install.meteor.com/ | sh
+RUN echo "LS_COLORS=\$LS_COLORS:'di=0;35:' ; export LS_COLORS" >> /root/.bashrc && mkdir /root/db && apt-get update && apt-get -y install curl locales vim && curl https://install.meteor.com/ | sh

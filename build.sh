@@ -1,3 +1,3 @@
 #!/bin/bash
-VERSION=v1.0.2
-docker build -t meteor:$VERSION .
+VERSION=v1.0.0
+docker build -t simple-todos:$VERSION .
